@@ -104,6 +104,71 @@
                 cursor: pointer;
               }
             }
+
+            .fleet-content {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-top: 20px;
+
+              .service {
+                text-align: center;
+                padding: 20px;
+
+                .icon i {
+                  font-size: 1.5rem;
+                }
+
+                .title {
+                  font-size: 14px;
+                  color: #6D7485;
+                  padding: 5px 10px;
+                }
+
+                .description {
+                  font-size: 18px;
+                  color: #0C1834;
+                  margin-bottom: 5px;
+                }
+
+                .status {
+                  padding: 5px 10px;
+                  font-size: 12px;
+                  border-radius: 15px;
+                  text-align: left;
+                  position: relative;
+
+                  &:after {
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    position: absolute;
+                    right: 5px;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    border-radius: 50%;
+                  }
+
+                  &.active {
+                    background: rgba(0, 174, 125, 0.1);
+                    color: #00AE7D;
+
+                    &:after {
+                      background: #00AE7D;
+                    }
+                  }
+
+                  &.inactive {
+                    background: rgba(230, 52, 56, 0.1);
+                    color: #E63438;
+
+                    &:after {
+                      background: #E63438;
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
