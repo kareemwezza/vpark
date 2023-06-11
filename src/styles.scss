@@ -1,1 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: "Frutiger";
+  src: url("/assets/fonts/frutigerltpro/linotype__frutigerltproblack-webfont.woff2")
+  format("woff2"),
+  url("/assets/fonts/frutigerltpro/linotype__frutigerltproblack-webfont.woff")
+  format("woff"),
+  url("/assets/fonts/frutigerltpro/linotype__frutigerltproblack-webfont.otf")
+  format("otf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Frutiger";
+  src: url("/assets/fonts/frutigerltpro/linotype__frutigerltprobold-webfont.woff2")
+  format("woff2"),
+  url("/assets/fonts/frutigerltpro/linotype__frutigerltprobold-webfont.woff")
+  format("woff"),
+  url("/assets/fonts/frutigerltpro/linotype__frutigerltprobold-webfont.otf")
+  format("otf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Frutiger";
+  src: url("/assets/fonts/frutigerltpro/linotype__frutigerltproroman-webfont.woff2")
+  format("woff2"),
+  url("/assets/fonts/frutigerltpro/linotype__frutigerltproroman-webfont.woff")
+  format("woff"),
+  url("/assets/fonts/frutigerltpro/linotype__frutigerltproroman-webfont.otf")
+  format("otf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Frutiger";
+  src: url("/assets/fonts/frutigerltpro/linotype__frutigerltprolight-webfont.woff2")
+  format("woff2"),
+  url("/assets/fonts/frutigerltpro/linotype__frutigerltprolight-webfont.woff")
+  format("woff"),
+  url("/assets/fonts/frutigerltpro/linotype__frutigerltprolight-webfont.otf")
+  format("otf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Frutiger", sans-serif;
+}

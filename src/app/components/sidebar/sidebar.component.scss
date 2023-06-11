@@ -1,0 +1,115 @@
+.sidebar {
+  padding: 100px 20px 0;
+  min-height: calc(100vh - 127px);
+
+  .item {
+    font-size: 24px;
+    text-transform: capitalize;
+    color: #6D7485;
+    padding: 20px 30px;
+    cursor: pointer;
+
+    span {
+      display: none;
+    }
+
+    &.active {
+      color: #1785C6;
+      font-weight: 600;
+      position: relative;
+
+      span {
+        position: absolute;
+        display: block;
+        width: 55px;
+        height: 55px;
+        background: transparent;
+        top: -10px;
+        right: -45px;
+        border-radius: 50%;
+        box-shadow: -25px -30px 0 #E9F0F8 inset;
+
+        &:after {
+          content: "";
+          position: absolute;
+          width: 55px;
+          height: 55px;
+          background: transparent;
+          bottom: -35px;
+          right: 0;
+          border-radius: 50%;
+          box-shadow: -25px 30px 0 #E9F0F8 inset;
+        }
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: -10px;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        background: #E9F0F8;
+        transform: translate(50%, -50%);
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: -20px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #0087CC;
+        transform: translateY(-50%);
+      }
+    }
+
+    img {
+      margin-right: 15px;
+    }
+  }
+
+  .help-box {
+    width: 223px;
+    height: 196px;
+    text-align: center;
+    background: #0C1834;
+    border-radius: 20px;
+    margin: 50px auto;
+    padding: 5px;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    h3 {
+      color: #FFFFFF;
+      margin: 45px 0 10px;
+    }
+
+    p {
+      color: #FFFFFF;
+      opacity: 0.8;
+    }
+
+    .btn {
+      font-size: 18px;
+      font-weight: 600;
+      color: #FFFFFF;
+      padding: 5px 10px;
+      background: #F8B319;
+      box-shadow: 0 10px 15px #00000033;
+      border-radius: 15px;
+      width: 70%;
+      margin: 10px auto;
+      cursor: pointer;
+    }
+  }
+}
